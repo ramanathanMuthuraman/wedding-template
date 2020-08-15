@@ -1,0 +1,43 @@
+.details-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.other-info {
+  width: 40%;
+}
+
+.map-wrapper {
+  width: 40%;
+  height: 70vh;
+}
+
+.details-section {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  word-break: break-word;
+}
+
+.details-section span {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+  .details-section span {
+    font-size: 18px;
+  }
+}

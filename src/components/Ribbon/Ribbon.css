@@ -1,0 +1,54 @@
+/* https://codepen.io/katydecorah/pen/lqBtz */
+
+.ribbon {
+  background: var(--text-color);
+  display: inline-block;
+  color: #f4f4f4;
+  padding: 0.5em 0.7em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  position: relative;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotate(-20deg) skew(-20deg, 10deg);
+  transform: rotate(-20deg) skew(-20deg, 10deg);
+}
+
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  width: 0;
+  height: 2em;
+  display: block;
+  background: #4993da;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em;
+  z-index: -1;
+  -webkit-transform: translateZ(-1em);
+  transform: translateZ(-1em);
+}
+.ribbon:before {
+  left: -0.5em;
+  top: 0.5em;
+  border-color: #ff5e43 #ff3310 #ff5e43 #ff5e43;
+}
+.ribbon:after {
+  right: -0.5em;
+  top: -0.5em;
+  border-color: #ff5e43 #ff5e43 #ff5e43 #ff3310;
+}
+
+@media only screen and (max-width: 748px) {
+  .ribbon {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ribbon {
+    font-size: 1em;
+  }
+}

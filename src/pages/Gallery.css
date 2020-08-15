@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.videos-wrapper {
+  padding: 20px;
+}
